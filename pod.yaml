@@ -5,7 +5,7 @@ metadata:
       app: Dudu
       Name: Bubu
 
-    name: bubu_ka-pod
+    name: bubu-pod
     namespace: default
 spec:
   containers:
