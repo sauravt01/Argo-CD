@@ -3,9 +3,8 @@ kind: Pod
 metadata:
     labels:
       app: Dudu
-      Name: Bubu
 
-    name: bubuka-pod
+    name: pod1
     namespace: default
 spec:
   containers:
@@ -14,3 +13,19 @@ spec:
       port:
         - containerPort: 80
           protocol: TCP
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+  labels:
+    app: Dudu
+    namespace: default
+spec:
+  containers:
+  - name: myapp
+    image: sonambewafaa/fbclone:v2
+    ports:
+      - containerPort: 70
+
